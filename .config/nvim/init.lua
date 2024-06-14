@@ -22,6 +22,24 @@ require("lazy").setup({
   {'hrsh7th/cmp-nvim-lsp'},
   {'hrsh7th/nvim-cmp'},
   {'L3MON4D3/LuaSnip'},
+}, {
+  ui = {
+    icons = {
+      cmd = "⌘",
+      config = "🛠",
+      event = "📅",
+      ft = "📂",
+      init = "⚙",
+      keys = "🗝",
+      plugin = "🔌",
+      runtime = "💻",
+      require = "🌙",
+      source = "📄",
+      start = "🚀",
+      task = "📌",
+      lazy = "💤 ",
+    },
+  }, 
 })
 
 local lsp_zero = require('lsp-zero')
@@ -58,6 +76,11 @@ cmp.setup({
       require('luasnip').lsp_expand(args.body)
     end,
   },
+  view = {
+    docs = {
+      auto_open = false
+    }
+  },
 })
 
 vim.opt.tabstop = 2
@@ -67,4 +90,6 @@ vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.opt.termguicolors = true
 
-vim.opt.pumheight = 5
+vim.opt.pumheight = 7
+vim.opt.number = true
+vim.opt.relativenumber = true
