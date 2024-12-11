@@ -1,0 +1,52 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Montserrat Medium", "Font Awesome 6 Free";
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: #ffffff;
+    color: #4c4f69;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: #7287fd;
+}
+
+#workspaces button.active { 
+    color: #4c4f69;
+}
+
+#workspaces button:hover {
+    color: #ea9d34;
+    background-color: #797593;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 7px;
+}
+
+#network {
+    color: #d7827e;
+}
+
+#battery.charging, #battery.plugged {
+    color: #d7827e;
+}
